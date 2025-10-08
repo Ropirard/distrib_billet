@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pied puant</title>
+    <link rel="stylesheet" href="style.css"> <!--import du fichier de style-->
+</head>
+<body>
+    <div class="card">
+        <h1>DAB - L'IDEM</h1>
+        <!-- Section pour sélection le compte -->
+        <div class="row">
+            <label for="accountSelect">Compte :</label>
+            <select id="accountSelect"></select>
+            <button id="openLogin">Insérer la carte</button>
+        </div>
+
+        <!-- Section cachée pour la session utilisateur tant qu'il n'est pas connecté -->
+        <div id="session" class="hidden">
+            <p>Utilisateur : <strong id="userName">-</strong></p>
+            <p>Solde : <strong id="userBalance">0 €</strong></p>
+            <!-- Boutons pour les opérations -->
+             <div class="row">
+                <button id="btnBalance">Voir solde</button>
+                <button id="btnWithdraw">Retirer</button>
+                <button id="btnDeposit">Deposer</button>
+                <button id="btnLogout">Déconnection</button>
+             </div>
+             <!-- Section pour l'historique-->
+              <h3>Historique</h3>
+              <ul id="history"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- import du fichier script.js -->
+</body>
+</html>

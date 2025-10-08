@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px; 
+    background-color: #f7f7f6;
+    color: #ffe600
+}
+
+.card {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #00ffc8;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 8px 0;
+}
+
+button {
+    padding: 6px 10px;
+}
+
+input, select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    padding-left: 18px;
+}
